@@ -42,14 +42,15 @@ buildGraph.cpp
 
 2. Cluster the BWT graph using Metis.
 
-3. Optimize the layout of BWT blocks inside each cluster (optional).
-```bash
-cluster.py
-```
 
-4. Build the permutation of blocks using the output of Metis and store it to a file starting with stating the block size.
+3. Build the permutation of blocks using the output of Metis and store it to a file starting with stating the block size.
 ```bash
 Example of the format of the permutation file: pine_genome_1000000_metisOrder10.txt (clustered with block size 100000 bases and cluster number of 10)
+```
+
+4. Optimize the layout of BWT blocks inside each cluster (optional).
+```bash
+cluster.py (it can only optimize the layout of one cluster each time).
 ```
 
 5. Build wavelet tree of the BWT of the dataset.
