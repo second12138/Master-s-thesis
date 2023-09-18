@@ -42,32 +42,32 @@ buildGraph.cpp
 
 2. Cluster the BWT graph using Metis.
 
-3.Optimize the layout of BWT blocks inside each cluster (optional).
+3. Optimize the layout of BWT blocks inside each cluster (optional).
 ```bash
 cluster.py
 ```
 
-3. Build the permutation of blocks using the output of Metis and store it to a file starting with stating the block size.
+4. Build the permutation of blocks using the output of Metis and store it to a file starting with stating the block size.
 ```bash
 Example of the format of the permutation file: pine_genome_1000000_metisOrder10.txt (clustered with block size 100000 bases and cluster number of 10)
 ```
 
-4. Build wavelet tree of the BWT of the dataset.
+5. Build wavelet tree of the BWT of the dataset.
 ```bash
 string_wt.cpp
 ```
 
-5. Build wavelet forest of the permuted BWT blocks of the dataset.
+6. Build wavelet forest of the permuted BWT blocks of the dataset.
 ```bash
 short_wt.cpp
 ```
 
-6. Calculate the ranks of each characters in the alphabet of the alphabetically sorted dataset.
+7. Calculate the ranks of each characters in the alphabet of the alphabetically sorted dataset.
 ```bash
 ranks.cpp
 ```
 
-7. Substract a certain length of snippet of the dataset using both default layout of the BWT and optimized layout then compare their running times.
+8. Substract a certain length of snippet of the dataset using both default layout of the BWT and optimized layout then compare their running times.
 ```bash
 inverse.cpp
 ```
