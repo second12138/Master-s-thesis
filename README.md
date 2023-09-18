@@ -1,8 +1,8 @@
-# Master's Thesis of Yansongg Li
-This is the repository for Yansng Li's thesis for Master of Computer Science at Dalhousie University (Halifax, NS, Canada).
+# Master's Thesis of Yansong Li
+This is the repository for Yansng Li's thesis for the Master of Computer Science at Dalhousie University (Halifax, NS, Canada).
 
 ## A copy of the original thesis 
-The pdf file named YansongLi2023 is a copy of thesis, which can also be found at
+The pdf file named YansongLi2023 is a copy of the thesis, which can also be found at
 ```bash
 http://hdl.handle.net/10222/82808
 ```
