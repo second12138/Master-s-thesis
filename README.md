@@ -41,6 +41,7 @@ buildGraph.cpp
 ```
 
 2. Cluster the BWT graph using Metis.
+
 3.Optimize the layout of BWT blocks inside each cluster (optional).
 ```bash
 cluster.py
